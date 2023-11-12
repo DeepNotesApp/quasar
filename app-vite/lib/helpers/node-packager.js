@@ -259,8 +259,8 @@ class Pnpm extends PackageManager {
 
   getInstallParams (env) {
     return env === 'development'
-      ? [ 'install' ]
-      : [ 'install', '--prod' ]
+      ? [ 'install', '--no-frozen-lockfile' ]
+      : [ 'install', '--no-frozen-lockfile', '--prod' ]
   }
 
   getInstallPackageParams (names, isDevDependency) {
