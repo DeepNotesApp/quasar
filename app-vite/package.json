@@ -1,6 +1,6 @@
 {
-  "name": "@quasar/app-vite",
-  "version": "1.6.2",
+  "name": "@deepnotes/quasar-app-vite",
+  "version": "2.0.0-alpha.42",
   "description": "Quasar Framework App CLI with Vite",
   "bin": {
     "quasar": "./bin/quasar"
