@@ -46,6 +46,8 @@ class ElectronBuilder extends AppBuilder {
   async #writePackageJson () {
     const pkg = require(appPaths.resolve.app('package.json'))
 
+    pkg.name += '-electron'
+
     if (pkg.dependencies) {
       pkg.dependencies = getFixedDeps(pkg.dependencies)
       delete pkg.dependencies[ '@quasar/extras' ]

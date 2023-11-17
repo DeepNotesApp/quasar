@@ -130,7 +130,7 @@ class CapacitorConfigFile {
     const capPkg = require(capPkgPath)
 
     Object.assign(capPkg, {
-      name: cfg.capacitor.appName || pkg.name,
+      name: `${cfg.capacitor.appName || pkg.name}-capacitor`,
       version: cfg.capacitor.version || pkg.version,
       description: cfg.capacitor.description || pkg.description,
       author: pkg.author
